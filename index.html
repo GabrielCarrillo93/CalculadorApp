@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <title>CalculadorApp</title>
+</head>
+<body>
+  <header class="col-3">
+    <div class="flexrow">
+      <div class="col-6">
+        <h1>calc</h1>
+      </div>
+      <div class="col-3 spantheme">
+        THEME
+      </div>
+      <div class="col-3">
+        <div class="selector col-12">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+        </div>
+        <div class="toggler col-12">
+          <input type="radio" name="theme" id="tema1" checked>
+          <input type="radio" name="theme" id="tema2">
+          <input type="radio" name="theme" id="tema3">
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main class="col-3">
+    <form action="">
+      <input type="number" name="" id="" readonly>
+      <div class="container">
+        <div class="row-4">
+          <button type="button" class="number" id="seven">7</button>
+          <button type="button" class="number">8</button>
+          <button type="button" class="number">9</button>
+          <button type="button" class="del">DEL</button>
+        </div>
+        <div class="row-4">
+          <button type="button" class="number">4</button>
+          <button type="button" class="number">5</button>
+          <button type="button" class="number">6</button>
+          <button type="button" class="number">+</button>
+        </div>
+        <div class="row-4">
+          <button type="button" class="number">1</button>
+          <button type="button" class="number">2</button>
+          <button type="button" class="number">3</button>
+          <button type="button" class="number">-</button>
+        </div>
+        <div class="row-4">
+          <button type="button" class="number">.</button>
+          <button type="button" class="number">0</button>
+          <button type="button" class="number">/</button>
+          <button type="button" class="number">x</button>
+        </div>
+        <div class="row-2">
+          <button type="reset" class="del">RESET</button>
+          <button class="result">=</button>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+
+  <script src="js/logic.js"></script>
+</body>
+</html>
