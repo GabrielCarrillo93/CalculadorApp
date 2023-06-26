@@ -119,7 +119,7 @@ function display(val){
     return val;
 }
 
-function solve(){
+function resolve(){
     let ecuacion = document.getElementById("result").value;
     let resultado = eval(ecuacion);
     document.getElementById("result").value = resultado;
