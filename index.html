@@ -10,25 +10,25 @@
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
   <title>CalculadorApp</title>
 </head>
-<body>
+<body id="cuerpo">
   <header class="col-3">
     <div class="flexrow">
       <div class="col-6">
-        <h1>calc</h1>
+        <h1 id="logo">calc</h1>
       </div>
       <div class="col-3 spantheme">
         THEME
       </div>
       <div class="col-3">
         <div class="selector col-12">
-          <span>1</span>
-          <span>2</span>
-          <span>3</span>
+          <span class="nidea">1</span>
+          <span class="nidea">2</span>
+          <span class="nidea">3</span>
         </div>
-        <div class="toggler col-12">
-          <input type="radio" name="theme" id="tema1" checked>
-          <input type="radio" name="theme" id="tema2">
-          <input type="radio" name="theme" id="tema3">
+        <div class="col-12" id="toggler">
+          <input type="radio" class="reidio" name="theme" id="tema1" onclick="cambiarTema(Tema1)" checked >
+          <input type="radio" class="reidio" name="theme" id="tema2" onclick="cambiarTema(Tema2)">
+          <input type="radio" class="reidio" name="theme" id="tema3" onclick="cambiarTema(Tema3)">
         </div>
       </div>
     </div>
@@ -36,35 +36,35 @@
   
   <main class="col-3">
     <form action="">
-      <input type="number" name="" id="" readonly>
+      <input type="text" name="pantalla" id="result" value="">
       <div class="container">
         <div class="row-4">
-          <button type="button" class="number" id="seven">7</button>
-          <button type="button" class="number">8</button>
-          <button type="button" class="number">9</button>
-          <button type="button" class="del">DEL</button>
+          <input type="button" onclick="display('7')" value="7" class="number">
+          <input type="button" onclick="display('8')" value="8" class="number">
+          <input type="button" onclick="display('9')" value="9" class="number">
+          <input type="button" class="del" value="DEL">
         </div>
         <div class="row-4">
-          <button type="button" class="number">4</button>
-          <button type="button" class="number">5</button>
-          <button type="button" class="number">6</button>
-          <button type="button" class="number">+</button>
+          <input type="button" onclick="display('4')" value="4" class="number">
+          <input type="button" onclick="display('5')" value="5" class="number">
+          <input type="button" onclick="display('6')" value="6" class="number">
+          <input type="button" onclick="display('+')" value="+" class="number">
         </div>
         <div class="row-4">
-          <button type="button" class="number">1</button>
-          <button type="button" class="number">2</button>
-          <button type="button" class="number">3</button>
-          <button type="button" class="number">-</button>
+          <input type="button" onclick="display('1')" value="1" class="number">
+          <input type="button" onclick="display('2')" value="2" class="number">
+          <input type="button" onclick="display('3')" value="3" class="number">
+          <input type="button" onclick="display('-')" value="-" class="number">
         </div>
         <div class="row-4">
-          <button type="button" class="number">.</button>
-          <button type="button" class="number">0</button>
-          <button type="button" class="number">/</button>
-          <button type="button" class="number">x</button>
+          <input type="button" onclick="display('.')" value="." class="number">
+          <input type="button" onclick="display('0')" value="0" class="number">
+          <input type="button" onclick="display('/')" value="/" class="number">
+          <input type="button" onclick="display('*')" value="x" class="number">
         </div>
         <div class="row-2">
-          <button type="reset" class="del">RESET</button>
-          <button class="result">=</button>
+          <input type="button" class="del" value="RESET" onclick="clearAll()">
+          <input type="button" id="solve" value="=" onclick="solve()">
         </div>
       </div>
     </form>

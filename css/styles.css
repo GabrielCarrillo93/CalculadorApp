@@ -60,7 +60,7 @@ h1{
     margin-bottom: 0
 }
 
-.toggler{
+#toggler{
     background-color: hsl(223, 31%, 20%);
     float: right;
     text-align: center;
@@ -113,7 +113,7 @@ input[type=radio]:checked {
     background-color: red;
  }
 
-input[type="number"]{
+input[type="text"]{
     width: 100%;
     padding: 0.6rem 0.1rem;
     font-size: 1rem;
@@ -128,7 +128,7 @@ input[type="number"]{
 }
 
 
-button{
+input[type="button"]{
     font-family: 'League Spartan', sans-serif;
     padding: 0.3rem;
     border-radius: 5px;
@@ -136,9 +136,10 @@ button{
 }
 
 .number{
-    color: hsl(223, 31%, 20%);
+    color: hsl(221, 14%, 31%);
     box-shadow: 0 5px gray;
     font-size: 1rem;
+    background-color: hsl(0, 0%, 94%);
 }
 
 .del{
@@ -148,7 +149,7 @@ button{
     font-size: 0.7rem;
 }
 
-.result{
+#solve{
     background-color:  hsl(6, 63%, 50%);
     box-shadow: 0 5px hsl(6, 70%, 34%);
     font-size: 0.8rem;
@@ -167,3 +168,4 @@ button{
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
