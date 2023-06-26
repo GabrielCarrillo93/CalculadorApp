@@ -22,7 +22,7 @@ const Tema2 = {
     fondo: "hsl(0, 0%, 90%)",
     colorFondo: "hsl(60, 10%, 19%)",
     pantalla: "hsl(0, 0%, 93%)",
-    colorPantalla: "hsl(25, 98%, 40%)",
+    colorPantalla: "hsl(60, 10%, 19%)",
     selector: "hsl(25, 98%, 40%)",
     noSelector: "hsl(0, 5%, 81%)",
     fondoSelector: "hsl(0, 5%, 81%)",
@@ -97,7 +97,6 @@ function cambiarFondos(tema){
             selector.style.backgroundColor = tema.noSelector;
         }
     }
-    
 }
 
 function cambiarTextos(tema){
@@ -105,6 +104,13 @@ function cambiarTextos(tema){
     for (const span of spans) {
         span.style.color = tema.colorFondo;
     }
+    let screen = document.getElementById("result");
+    screen.style.color = tema.colorPantalla;
+    let logo = document.getElementById("logo");
+    logo.style.color = tema.colorFondo;
+    let theme = document.getElementById("spantheme");
+    theme.style.color = tema.colorFondo;
+
 }
 
 
